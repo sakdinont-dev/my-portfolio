@@ -1,3 +1,3 @@
 export default function AboutMePage() {
-  return <div>About Me Page</div>;
+  return <div>About Me Pages</div>;
 }
