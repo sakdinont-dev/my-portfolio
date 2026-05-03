@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notoSansThai } from "@/font/noto-sans-thai";
 import Navigation from "@/components/navigation";
+import { ThemeProvider } from "@/lib/theme/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,12 +17,14 @@ export default function RootLayout({
   return (
     <html lang="th" className={`${notoSansThai.variable} h-full antialiased`}>
       <body className="min-h-screen bg-background text-foreground font-sans">
-        <Navigation />
-        <main className="px-6 py-8 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-6xl">
-            {children}
-          </div>
-        </main>
+        <ThemeProvider>
+          <Navigation />
+          <main className="px-6 py-8 sm:px-10 lg:px-16">
+            <div className="mx-auto max-w-6xl">
+              {children}
+            </div>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
