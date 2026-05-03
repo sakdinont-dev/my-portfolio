@@ -5,10 +5,10 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/main", label: "Home" },
-  { href: "/main/about-me", label: "About Me" },
-  { href: "/main/experience", label: "Experience" },
-  { href: "/main/contact-me", label: "Contact Me" },
+  { href: "/", label: "Home" },
+  { href: "/about-me", label: "About Me" },
+  { href: "/experience", label: "Experience" },
+  { href: "/contact-me", label: "Contact Me" },
 ];
 
 export default function Navigation() {

@@ -15,9 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th" className={`${notoSansThai.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-screen bg-background text-foreground font-sans">
         <Navigation />
-        <main className="flex-1">{children}</main>
+        <main className="px-6 py-8 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-6xl">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
