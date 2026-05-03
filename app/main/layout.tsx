@@ -10,5 +10,11 @@ export default function MainLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <div className="px-6 py-8 sm:px-10 lg:px-16">
+      <div className="mx-auto max-w-6xl">
+        {children}
+      </div>
+    </div>
+  );
 }

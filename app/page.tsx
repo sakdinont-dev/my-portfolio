@@ -1,5 +1,5 @@
-import PortfolioPage from "@/components/portfolio-page";
+import MainPage from "./main/page";
 
 export default function RootPage() {
-  return <PortfolioPage />;
+  return <MainPage />;
 }

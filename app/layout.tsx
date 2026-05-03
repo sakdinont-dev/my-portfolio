@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Thai } from "next/font/google";
+import { notoSansThai } from "@/font/noto-sans-thai";
+import Navigation from "@/components/navigation";
 import "./globals.css";
 
-const notoSansThai = Noto_Sans_Thai({
-  variable: "--font-noto-sans-thai",
-  subsets: ["thai", "latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "Your Portfolio",
+  title: "MYPortfolio",
   description: "A portfolio site showcasing projects, skills, and contact information.",
 };
 
@@ -21,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th" className={`${notoSansThai.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Navigation />
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }
