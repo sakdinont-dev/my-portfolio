@@ -6,7 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MYPortfolio",
-  description: "A portfolio site showcasing projects, skills, and contact information.",
+  description:
+    "A portfolio site showcasing projects, skills, and contact information.",
 };
 
 export default function RootLayout({
@@ -20,9 +21,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navigation />
           <main className="px-6 py-8 sm:px-10 lg:px-16">
-            <div className="mx-auto max-w-6xl">
-              {children}
-            </div>
+            <div className="mx-auto max-w-6xl">{children}</div>
           </main>
         </ThemeProvider>
       </body>
