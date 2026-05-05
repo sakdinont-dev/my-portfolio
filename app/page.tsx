@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Carousel } from "@/components/ui/carousel";
 
 const projects = [
   {
@@ -79,7 +80,7 @@ export default function RootPage() {
               <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-3xl uppercase">
                 Welcome to my portfolio
               </h1>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
+              <p className="mt-4 max-w-4xl text-lg leading-8 text-muted-foreground">
                 I build accessible, polished web applications with Next.js,
                 TypeScript, and thoughtful UI design. Explore the sections below
                 to learn about my work, experience, and how to contact me.
@@ -95,7 +96,7 @@ export default function RootPage() {
             <h2 className="text-3xl font-semibold text-foreground">
               Tech Stack
             </h2>
-            <p className="mt-2 max-w-3xl leading-8 text-muted-foreground">
+            <p className="mt-2 max-w-4xl leading-8 text-muted-foreground">
               I build modern portfolio and app experiences with a strong focus
               on TypeScript, React, Next.js, Tailwind CSS, and polished UI
               components. This site also showcases iconography from lucide,
@@ -103,20 +104,8 @@ export default function RootPage() {
               carousel components.
             </p>
             <div className="mt-6">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <h3 className="text-2xl font-semibold text-foreground">
-                    Stack Carousel
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    Swipe or scroll through each core technology and how it
-                    shapes this portfolio experience.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 flex gap-4 overflow-x-auto pb-4 pr-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-slate-400/50 scrollbar-track-transparent">
-                {techStacks.map((tech) => (
+              <Carousel
+                items={techStacks.map((tech) => (
                   <Card
                     key={tech.title}
                     className="min-w-[18rem] flex-shrink-0 snap-start border-border"
@@ -132,7 +121,7 @@ export default function RootPage() {
                     </CardContent>
                   </Card>
                 ))}
-              </div>
+              />
             </div>
           </div>
 
