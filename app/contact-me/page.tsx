@@ -5,16 +5,19 @@ export default function ContactMePage() {
         <div className="space-y-6">
           <h2 className="text-3xl font-semibold text-foreground">Contact Me</h2>
           <p className="max-w-3xl leading-8 text-muted-foreground">
-            Let&apos;s build something great together. Reach out if you want to
-            collaborate on a project, need help building a web app, or want to
-            ask a question.
+            I am open to job opportunities and collaborations. Feel free to
+            reach out if you have any questions or want to discuss potential
+            opportunities.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl border border-border bg-muted/10 p-6">
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
                 Email
               </p>
-              <a href="mailto:b.sakdinont@gmail.com" className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary">
+              <a
+                href="mailto:b.sakdinont@gmail.com"
+                className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary"
+              >
                 b.sakdinont@gmail.com
               </a>
             </div>
@@ -22,7 +25,10 @@ export default function ContactMePage() {
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
                 Phone
               </p>
-              <a href="tel:+66985631337" className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary">
+              <a
+                href="tel:+66985631337"
+                className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary"
+              >
                 098-563-1337
               </a>
             </div>
@@ -31,7 +37,8 @@ export default function ContactMePage() {
                 Address
               </p>
               <p className="mt-3 text-base font-medium leading-relaxed text-foreground">
-                989/250 Bangpu Villa 2, Moo 7, Soi Witthayukanbin, Sukhumvit Road, Samut Prakan 10280
+                989/250 Bangpu Villa 2, Moo 7, Soi Witthayukanbin, Sukhumvit
+                Road, Samut Prakan 10280
               </p>
             </div>
           </div>
