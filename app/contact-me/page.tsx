@@ -14,16 +14,24 @@ export default function ContactMePage() {
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
                 Email
               </p>
-              <p className="mt-3 text-base font-medium text-foreground">
-                you@example.com
-              </p>
+              <a href="mailto:b.sakdinont@gmail.com" className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary">
+                b.sakdinont@gmail.com
+              </a>
             </div>
             <div className="rounded-3xl border border-border bg-muted/10 p-6">
               <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                LinkedIn
+                Phone
               </p>
-              <p className="mt-3 text-base font-medium text-foreground">
-                linkedin.com/in/your-profile
+              <a href="tel:+66985631337" className="mt-3 block text-base font-medium text-foreground transition-colors hover:text-primary">
+                098-563-1337
+              </a>
+            </div>
+            <div className="rounded-3xl border border-border bg-muted/10 p-6 sm:col-span-2">
+              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
+                Address
+              </p>
+              <p className="mt-3 text-base font-medium leading-relaxed text-foreground">
+                989/250 Bangpu Villa 2, Moo 7, Soi Witthayukanbin, Sukhumvit Road, Samut Prakan 10280
               </p>
             </div>
           </div>
