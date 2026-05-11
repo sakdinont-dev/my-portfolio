@@ -2,35 +2,11 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Carousel } from "@/components/ui/carousel";
-
-const projects = [
-  {
-    title: "Portfolio Web App",
-    description:
-      "A responsive, accessible portfolio built with Next.js, Tailwind CSS, and modern UI patterns to highlight your work.",
-    tech: "Next.js · TypeScript · Tailwind CSS",
-    href: "#",
-  },
-  {
-    title: "Dashboard Experience",
-    description:
-      "A clean project dashboard with reusable cards, responsive layouts, and polished interaction details.",
-    tech: "React · CSS Modules · API Integration",
-    href: "#",
-  },
-  {
-    title: "Marketing Landing Page",
-    description:
-      "A conversion-focused landing page with strong visuals, clear messaging, and mobile-friendly design.",
-    tech: "HTML · CSS · Accessibility",
-    href: "#",
-  },
-];
+import Image from "next/image";
 
 export default function RootPage() {
   const techStacks = [
@@ -45,17 +21,17 @@ export default function RootPage() {
         "Component-driven UI with declarative rendering and reusable interface building blocks.",
     },
     {
-      title: "Next.js",
+      title: "Nextjs",
       description:
         "Server-side rendering, routing, and full-stack capabilities for modern web apps.",
     },
     {
-      title: "Tailwind CSS",
+      title: "TailwindCSS",
       description:
         "Utility-first styling for rapid UI design and consistent responsive layouts.",
     },
     {
-      title: "lucide-react",
+      title: "lucideIcon",
       description:
         "Lightweight icons with custom styling for polished interface details.",
     },
@@ -70,6 +46,19 @@ export default function RootPage() {
         "Source control and collaboration tools powering code versioning and CI workflows.",
     },
   ];
+
+  const getLogo = (title: string) => {
+    const logos: Record<string, string> = {
+      TypeScript: "typescript.png",
+      React: "React-icon.png",
+      Nextjs: "next-js.jfif",
+      TailwindCSS: "tailwind.png",
+      lucideIcon: "lucid-icon.png",
+      Vercel: "Vercel_favicon.svg",
+      GitHub: "github.jpg",
+    };
+    return logos[title] || null;
+  };
 
   return (
     <div className="space-y-8">
@@ -111,7 +100,18 @@ export default function RootPage() {
                     className="min-w-[18rem] flex-shrink-0 snap-start border-border"
                   >
                     <CardHeader>
-                      <CardTitle>{tech.title}</CardTitle>
+                      <div className="flex items-center justify-between gap-4">
+                        <CardTitle>{tech.title}</CardTitle>
+                        {getLogo(tech.title) && (
+                          <Image
+                            src={`/img/logo/${getLogo(tech.title)}`}
+                            alt={tech.title}
+                            width={40}
+                            height={40}
+                            className="mb-2 rounded-full border border-border bg-muted/40 dark:bg-muted/70 p-1"
+                          />
+                        )}
+                      </div>
                       <CardDescription>Core role in the stack</CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -125,7 +125,7 @@ export default function RootPage() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <div className="flex items-center justify-between gap-4">
               <div>
                 <h3 className="text-2xl font-semibold text-foreground">
@@ -160,7 +160,7 @@ export default function RootPage() {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

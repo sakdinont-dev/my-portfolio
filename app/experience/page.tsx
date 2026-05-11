@@ -153,7 +153,6 @@ export default function ExperiencePage() {
             }}
           >
             <X className="h-6 w-6 cursor-pointer hover:text-primary" />
-            <span className="sr-only">Close</span>
           </button>
           <div
             className="relative h-full max-h-[90vh] w-full max-w-5xl overflow-hidden rounded-lg"
