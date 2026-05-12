@@ -12,36 +12,43 @@ export default function RootPage() {
   const techStacks = [
     {
       title: "TypeScript",
+      type: "Programming Language",
       description:
         "Typesafe development for React and Next.js, improving reliability and developer confidence.",
     },
     {
       title: "React",
+      type: "Frontend Library",
       description:
         "Component-driven UI with declarative rendering and reusable interface building blocks.",
     },
     {
       title: "Nextjs",
+      type: "Framework",
       description:
         "Server-side rendering, routing, and full-stack capabilities for modern web apps.",
     },
     {
       title: "TailwindCSS",
+      type: "CSS Framework",
       description:
         "Utility-first styling for rapid UI design and consistent responsive layouts.",
     },
     {
       title: "lucideIcon",
+      type: "Icon Library",
       description:
         "Lightweight icons with custom styling for polished interface details.",
     },
     {
       title: "Vercel",
+      type: "Deployment Platform",
       description:
         "Seamless deployment and instant previews for fast front-end delivery.",
     },
     {
       title: "GitHub",
+      type: "Version Control",
       description:
         "Source control and collaboration tools powering code versioning and CI workflows.",
     },
@@ -69,7 +76,7 @@ export default function RootPage() {
               <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-3xl uppercase">
                 Welcome to my portfolio
               </h1>
-              <p className="mt-4 max-w-4xl text-lg leading-8 text-muted-foreground">
+              <p className="mt-4 max-w-5xl text-lg leading-8 text-muted-foreground">
                 I build accessible, polished web applications with Next.js,
                 TypeScript, and thoughtful UI design. Explore the sections below
                 to learn about my work, experience, and how to contact me.
@@ -85,7 +92,7 @@ export default function RootPage() {
             <h2 className="text-3xl font-semibold text-foreground">
               Tech Stack
             </h2>
-            <p className="mt-2 max-w-4xl leading-8 text-muted-foreground">
+            <p className="mt-2 max-w-5xl leading-8 text-muted-foreground">
               I build modern portfolio and app experiences with a strong focus
               on TypeScript, React, Next.js, Tailwind CSS, and polished UI
               components. This site also showcases iconography from lucide,
@@ -94,29 +101,30 @@ export default function RootPage() {
             </p>
             <div className="mt-6">
               <Carousel
-                items={techStacks.map((tech) => (
+                className="max-w-5xl px-4"
+                items={techStacks.map((stack) => (
                   <Card
-                    key={tech.title}
-                    className="min-w-[18rem] flex-shrink-0 snap-start border-border"
+                    key={stack.title}
+                    className="mx-auto w-full max-w-3xl border-border"
                   >
                     <CardHeader>
-                      <div className="flex items-center justify-between gap-4">
-                        <CardTitle>{tech.title}</CardTitle>
-                        {getLogo(tech.title) && (
+                      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <CardTitle>{stack.title}</CardTitle>
+                        {getLogo(stack.title) && (
                           <Image
-                            src={`/img/logo/${getLogo(tech.title)}`}
-                            alt={tech.title}
+                            src={`/img/logo/${getLogo(stack.title)}`}
+                            alt={stack.title}
                             width={40}
                             height={40}
-                            className="mb-2 rounded-full border border-border bg-muted/40 dark:bg-muted/70 p-1"
+                            className="rounded-full border border-border bg-muted/40 dark:bg-muted/70 p-1"
                           />
                         )}
                       </div>
-                      <CardDescription>Core role in the stack</CardDescription>
+                      <CardDescription>{stack.type}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm leading-7 text-muted-foreground">
-                        {tech.description}
+                        {stack.description}
                       </p>
                     </CardContent>
                   </Card>

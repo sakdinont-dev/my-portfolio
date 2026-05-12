@@ -7,7 +7,7 @@ export default function AboutMePage() {
           <h3 className="text-2xl font-semibold text-foreground">
             My name is Sakdinont Boonma.
           </h3>
-          <p className="max-w-3xl leading-8 text-muted-foreground">
+          <p className="max-w-5xl leading-8 text-muted-foreground">
             I enjoy turning complex problems into simple, beautiful experiences.
             My work is informed by accessibility best practices, strong
             performance, and thoughtful interaction design.

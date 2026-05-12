@@ -4,7 +4,7 @@ export default function ContactMePage() {
       <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
           <h2 className="text-3xl font-semibold text-foreground">Contact Me</h2>
-          <p className="max-w-3xl leading-8 text-muted-foreground">
+          <p className="max-w-5xl leading-8 text-muted-foreground">
             I am open to job opportunities and collaborations. Feel free to
             reach out if you have any questions or want to discuss potential
             opportunities.
