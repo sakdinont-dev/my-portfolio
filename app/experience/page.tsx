@@ -10,9 +10,31 @@ export default function ExperiencePage() {
 
   const experiences = [
     {
+      title: "Netka System E-form Project",
+      role: "Software Developer",
+      period: "Internship",
+      details:
+        "Designed and developed an electronic form system (E-form) to replace traditional paper-based workflows. Conducted requirement gathering to understand internal business processes. Developed dynamic and responsive forms with validation logic to ensure data integrity. Focused on improving operational efficiency and streamlining data collection for organizational reporting.",
+      skills: [
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Requirement Analysis",
+        "Data Visualization",
+        "UI/UX Design",
+        "Figma",
+        "Scrum",
+      ],
+      images: [
+        "/img/experience/Netka/eform-preview-1.png",
+        "/img/experience/Netka/eform-preview-2.png",
+      ],
+    },
+    {
       title: "Bed Sensor Intelligence Project",
-      role: "Business Analyst",
-      period: "Group Project",
+      role: "Full-stack Developer / Project Manager",
+      period: "Group Final Project",
       details:
         "Developed an intelligent bed sensor system for hospitals. Gathered user requirements from doctors, nurses, and specialist IoT developers. Built the front-end using Vue.js with Quasar Framework, and the back-end using NestJS. Implemented an AI model using Python and TensorFlow for predicting patient postures. Followed Scrum methodology with task backlog and sprint planning.",
       link: "https://gitlab.com/8bit-bed-sensor",
@@ -20,8 +42,8 @@ export default function ExperiencePage() {
         "Vue.js",
         "Quasar",
         "NestJS",
-        "Python",
-        "TensorFlow",
+        "MySQL",
+        "Deep Learning",
         "IoT",
         "Scrum",
       ],
@@ -34,28 +56,24 @@ export default function ExperiencePage() {
     {
       title: "Cafe Management System (CS Boot Camp 2024)",
       role: "Full-stack Developer",
-      period: "Boot Camp",
+      period: "Project Boot Camp",
       details:
         "Developed a full-stack website cafe management system covering Customer View and Purchase, Staff, and Owner workflows. Worked as a team to design database schema, implemented front-end using Vue.js and Vuetify, back-end using NestJS and SQLite. Applied SDLC with feature planning and analyzed backend data to visualize sales trends and improve business decisions.",
       link: "https://gitlab.com/cs-bootcamp-dcoffee",
-      skills: ["Vue.js", "Vuetify", "NestJS", "SQLite", "SDLC"],
-      images: [
-        "/img/experience/CSBootCamp/Screenshot 2025-07-06 152946.png",
-        "/img/experience/CSBootCamp/Screenshot 2025-07-06 154938.png",
-        "/img/experience/CSBootCamp/Screenshot 2025-07-06 160937.png",
+      skills: [
+        "Vue.js",
+        "Vuetify",
+        "NestJS",
+        "SQLite",
+        "Figma",
+        "Data Analysis",
       ],
-    },
-    {
-      title: "Cafe Management System",
-      role: "Developer",
-      period: "First Project",
-      details:
-        "First group project after learning about software development. Created a basic cafe management system with menu ordering and stock management using Java Swing. Designed wireframes in Figma, implemented in Java, and learned to use Git for version control in a team.",
-      link: "https://gitlab.com/65160195/project-cafe-management-system",
-      skills: ["Java Swing", "Figma", "Git"],
       images: [
         "/img/experience/JavaSwing/image (3).png",
         "/img/experience/JavaSwing/image (4).png",
+        "/img/experience/CSBootCamp/Screenshot 2025-07-06 152946.png",
+        "/img/experience/CSBootCamp/Screenshot 2025-07-06 154938.png",
+        "/img/experience/CSBootCamp/Screenshot 2025-07-06 160937.png",
       ],
     },
   ];
@@ -65,7 +83,7 @@ export default function ExperiencePage() {
       <div className="space-y-8">
         <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-foreground">
+            <h2 className="text-3xl font-semibold text-foreground uppercase">
               Experience & Projects
             </h2>
             <div className="space-y-6">

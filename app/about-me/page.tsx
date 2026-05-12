@@ -3,7 +3,9 @@ export default function AboutMePage() {
     <div className="space-y-8">
       <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold text-foreground">About Me</h2>
+          <h2 className="text-3xl font-semibold text-foreground uppercase">
+            About Me
+          </h2>
           <h3 className="text-2xl font-semibold text-foreground">
             My name is Sakdinont Boonma.
           </h3>

@@ -3,7 +3,8 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "./theme-button";
+import { LanguagesToggle } from "./languages-button";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -24,7 +25,7 @@ export default function Navigation() {
               Portfolio
             </p>
             <p className="mt-1 text-2xl font-semibold text-foreground">
-              Your best work, clearly organized.
+              Software Developer
             </p>
           </div>
         </div>
@@ -47,6 +48,7 @@ export default function Navigation() {
             ))}
           </nav>
           <ThemeToggle />
+          <LanguagesToggle />
         </div>
       </div>
     </div>

@@ -6,7 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Carousel } from "@/components/ui/carousel";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function RootPage() {
   const techStacks = [
@@ -89,8 +91,19 @@ export default function RootPage() {
       <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
           <div>
-            <h2 className="text-3xl font-semibold text-foreground">
+            <h2 className="text-3xl font-semibold text-foreground justify-between flex items-center">
               Tech Stack
+              <div>
+                <Link
+                  href="https://github.com/sakdinont-dev/my-portfolio.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                >
+                  Repository
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </Link>
+              </div>
             </h2>
             <p className="mt-2 max-w-5xl leading-8 text-muted-foreground">
               I build modern portfolio and app experiences with a strong focus

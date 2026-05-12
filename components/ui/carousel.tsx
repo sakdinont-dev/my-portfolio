@@ -53,7 +53,7 @@ const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(
           onClick={nextSlide}
           className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-card/90 text-foreground shadow-sm transition hover:bg-card dark:bg-zinc-950/90"
         >
-          <ChevronRight className="h-5 w-5 cursor-pointer hover:text-primary" />
+          <ChevronRight className="h-5 w-5 cursor-pointer" />
         </button>
 
         <div className="mt-4 flex justify-center gap-2">

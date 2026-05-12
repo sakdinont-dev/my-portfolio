@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/lib/theme/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MYPortfolio",
+  title: "Portfolio - Sakdinont Boonma",
   description:
     "A portfolio site showcasing projects, skills, and contact information.",
 };
