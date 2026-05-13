@@ -10,7 +10,7 @@ export default function ExperiencePage() {
 
   const experiences = [
     {
-      title: "Netka System E-form Project",
+      title: "Netka EnTrust - E-form System",
       role: "Software Developer",
       period: "Internship",
       details:
@@ -53,9 +53,14 @@ export default function ExperiencePage() {
         "Scrum",
       ],
       images: [
-        "/img/experience/FinalProject/Screenshot 2025-07-07 213404.png",
-        "/img/experience/FinalProject/Screenshot 2025-07-07 213447.png",
-        "/img/experience/FinalProject/Screenshot 2025-07-07 213556.png",
+        "/img/experience/FinalProject/1.png",
+        "/img/experience/FinalProject/2.png",
+        "/img/experience/FinalProject/3.png",
+        "/img/experience/FinalProject/4.png",
+        "/img/experience/FinalProject/5.png",
+        "/img/experience/FinalProject/6.png",
+        "/img/experience/FinalProject/7.png",
+        "/img/experience/FinalProject/8.png",
       ],
     },
     {
@@ -74,8 +79,9 @@ export default function ExperiencePage() {
         "Data Analysis",
       ],
       images: [
-        "/img/experience/JavaSwing/image (3).png",
-        "/img/experience/JavaSwing/image (4).png",
+        "/img/experience/Figma/image (3).png",
+        "/img/experience/Figma/image (4).png",
+        "/img/experience/CSBootCamp/image (3).png",
         "/img/experience/CSBootCamp/Screenshot 2025-07-06 152946.png",
         "/img/experience/CSBootCamp/Screenshot 2025-07-06 154938.png",
         "/img/experience/CSBootCamp/Screenshot 2025-07-06 160937.png",
