@@ -58,24 +58,24 @@ export default function RootPage() {
 
   const getLogo = (title: string) => {
     const logos: Record<string, string> = {
-      TypeScript: "typescript.png",
-      React: "React-icon.png",
-      Nextjs: "next-js.jfif",
-      TailwindCSS: "tailwind.png",
-      lucideIcon: "lucid-icon.png",
-      Vercel: "Vercel_favicon.svg",
-      GitHub: "github.jpg",
+      TypeScript: "https://cdn.simpleicons.org/typescript/3178C6",
+      React: "https://cdn.simpleicons.org/react/61DAFB",
+      Nextjs: "https://cdn.simpleicons.org/nextdotjs/000000",
+      TailwindCSS: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+      lucideIcon: "https://cdn.simpleicons.org/lucide/000000",
+      Vercel: "https://cdn.simpleicons.org/vercel/000000",
+      GitHub: "https://cdn.simpleicons.org/github/000000",
     };
     return logos[title] || null;
   };
 
   return (
     <div className="space-y-8">
-      <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
+      <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="space-y-4">
             <div>
-              <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-3xl uppercase">
+              <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl uppercase">
                 Welcome to my portfolio
               </h1>
               <p className="mt-4 max-w-5xl text-lg leading-8 text-muted-foreground">
@@ -88,10 +88,10 @@ export default function RootPage() {
         </div>
       </section>
 
-      <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
+      <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
           <div>
-            <h2 className="text-3xl font-semibold text-foreground justify-between flex items-center">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
               Tech Stack
               <div>
                 <Link
@@ -124,12 +124,21 @@ export default function RootPage() {
                       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <CardTitle>{stack.title}</CardTitle>
                         {getLogo(stack.title) && (
-                          <Image
-                            src={`/img/logo/${getLogo(stack.title)}`}
+                          <img
+                            src={getLogo(stack.title) as string}
                             alt={stack.title}
                             width={40}
                             height={40}
-                            className="rounded-full border border-border bg-muted/40 dark:bg-muted/70 p-1"
+                            className={`rounded-full border border-border bg-muted/10 p-2 ${
+                              [
+                                "Nextjs",
+                                "Vercel",
+                                "GitHub",
+                                "lucideIcon",
+                              ].includes(stack.title)
+                                ? "dark:invert"
+                                : ""
+                            }`}
                           />
                         )}
                       </div>

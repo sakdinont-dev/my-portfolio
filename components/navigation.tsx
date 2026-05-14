@@ -31,7 +31,7 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center gap-4">
-          <nav className="flex gap-1">
+          <nav className="flex flex-wrap items-center gap-1 sm:gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}

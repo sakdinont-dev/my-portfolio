@@ -1,9 +1,9 @@
 export default function ContactMePage() {
   return (
     <div className="space-y-8">
-      <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
+      <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold text-foreground uppercase">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground uppercase">
             Contact Me
           </h2>
           <p className="max-w-5xl leading-8 text-muted-foreground">

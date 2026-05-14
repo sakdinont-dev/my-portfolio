@@ -12,20 +12,20 @@ export default function ExperiencePage() {
   return (
     <>
       <div className="space-y-8">
-        <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
+        <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-foreground uppercase">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground uppercase">
               Experience & Projects
             </h2>
             <div className="space-y-6">
               {experiences.map((item) => (
                 <article
                   key={item.title}
-                  className="group relative rounded-3xl border border-border bg-muted/10 p-6 transition-colors hover:bg-muted/20"
+                  className="group relative rounded-3xl border border-border bg-muted/10 p-5 sm:p-6 transition-colors hover:bg-muted/20"
                 >
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div className="space-y-1">
-                      <h3 className="text-xl font-semibold text-foreground">
+                      <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                         {item.title}
                       </h3>
                       <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
@@ -57,7 +57,7 @@ export default function ExperiencePage() {
                         <button
                           key={idx}
                           onClick={() => setSelectedImage(imgSrc)}
-                          className="relative h-48 w-80 shrink-0 snap-center overflow-hidden rounded-xl border border-border bg-muted/50 cursor-pointer"
+                          className="relative h-40 w-64 sm:h-48 sm:w-80 shrink-0 snap-center overflow-hidden rounded-xl border border-border bg-muted/50 cursor-pointer"
                         >
                           <Image
                             src={imgSrc}

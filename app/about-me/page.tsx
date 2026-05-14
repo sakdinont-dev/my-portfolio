@@ -4,9 +4,9 @@ import { skills, tools } from "@/data/about-me";
 export default function AboutMePage() {
   return (
     <div className="space-y-8">
-      <section className="rounded-3xl border border-border bg-card/90 p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
+      <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold text-foreground uppercase">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground uppercase">
             About Me
           </h2>
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
@@ -18,7 +18,7 @@ export default function AboutMePage() {
               className="rounded-full object-cover"
             />
             <div className="space-y-4 flex-1">
-              <h3 className="text-2xl font-semibold text-foreground">
+              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
                 My name is Sakdinont Boonma.
               </h3>
               <p className="max-w-5xl leading-8 text-muted-foreground">
