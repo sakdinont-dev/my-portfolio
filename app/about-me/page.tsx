@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { skills, tools } from "@/data/about-me";
 
 export default function AboutMePage() {
   return (
@@ -28,26 +29,62 @@ export default function AboutMePage() {
               </p>
             </div>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2">
             <div className="rounded-3xl border border-border bg-muted/10 p-6">
-              <h3 className="text-lg font-semibold text-foreground">Skills</h3>
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>React / Next.js</li>
-                <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Accessibility</li>
-                <li>API Integration</li>
-              </ul>
+              <h3 className="mb-6 text-xl font-semibold text-foreground">
+                Skills
+              </h3>
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="group flex flex-col items-center justify-center gap-3 rounded-2xl border border-border bg-card/50 p-4 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:bg-card/30"
+                  >
+                    {skill.icon ? (
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className={`h-8 w-8 transition-transform group-hover:scale-110 ${
+                          skill.invert ? "dark:invert" : ""
+                        }`}
+                      />
+                    ) : skill.LucideIcon ? (
+                      <skill.LucideIcon className="h-8 w-8 text-foreground/80 transition-transform group-hover:scale-110" />
+                    ) : null}
+                    <span className="text-xs font-medium text-center text-foreground/80">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="rounded-3xl border border-border bg-muted/10 p-6">
-              <h3 className="text-lg font-semibold text-foreground">Tools</h3>
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>Vercel</li>
-                <li>GitHub</li>
-                <li>Figma</li>
-                <li>Prisma</li>
-                <li>Supabase</li>
-              </ul>
+              <h3 className="mb-6 text-xl font-semibold text-foreground">
+                Tools
+              </h3>
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {tools.map((tool) => (
+                  <div
+                    key={tool.name}
+                    className="group flex flex-col items-center justify-center gap-3 rounded-2xl border border-border bg-card/50 p-4 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:bg-card/30"
+                  >
+                    {tool.icon ? (
+                      <img
+                        src={tool.icon}
+                        alt={tool.name}
+                        className={`h-8 w-8 transition-transform group-hover:scale-110 ${
+                          tool.invert ? "dark:invert" : ""
+                        }`}
+                      />
+                    ) : tool.LucideIcon ? (
+                      <tool.LucideIcon className="h-8 w-8 text-foreground/80 transition-transform group-hover:scale-110" />
+                    ) : null}
+                    <span className="text-xs font-medium text-center text-foreground/80">
+                      {tool.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export const LanguagesToggle = () => {
       variant="ghost"
       aria-label="Toggle languages"
     >
-      <Globe className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <Globe className="h-4 w-4" />
     </Button>
   );
 };
