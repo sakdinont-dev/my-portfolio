@@ -7,9 +7,8 @@ export default function ContactMePage() {
             Contact Me
           </h2>
           <p className="max-w-5xl leading-8 text-muted-foreground">
-            I am open to job opportunities and collaborations. Feel free to
-            reach out if you have any questions or want to discuss potential
-            opportunities.
+            I am open to job opportunities. Feel free to reach out if you have
+            any questions or want to discuss potential opportunities.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl border border-border bg-muted/10 p-6">

@@ -10,18 +10,18 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "Netka EnTrust - E-form System",
+    title: "Netka EnTrust - E-Form System",
     role: "Software Developer",
     period: "Internship",
     details:
-      "Designed and developed an electronic form system (E-form) to replace traditional paper-based workflows. Conducted requirement gathering to understand internal business processes. Developed dynamic and responsive forms with validation logic to ensure data integrity. Focused on improving operational efficiency and streamlining data collection for organizational reporting.",
+      "Designed and developed a customizable electronic form system (e-form) using the FormEngine library. Implemented multi-step approval workflows featuring user assignments and automated email notifications. Developed interactive dashboards using Recharts to visualize form submission results and integrated a comprehensive audit logging system to track all user activities and ensure e-form data integrity.",
     skills: [
       "React",
       "Next.js",
       "PostgreSQL",
       "FormEngine",
       "Requirement Analysis",
-      "ReChart",
+      "Recharts",
       "UI/UX Design",
       "SMTP",
       "Figma",
@@ -41,7 +41,7 @@ export const experiences: Experience[] = [
     role: "Full-stack Developer / Project Manager",
     period: "Group Final Project",
     details:
-      "Developed an intelligent bed sensor system for hospitals. Gathered user requirements from doctors, nurses, and specialist IoT developers. Built the front-end using Vue.js with Quasar Framework, and the back-end using NestJS. Implemented an AI model using Python and TensorFlow for predicting patient postures. Followed Scrum methodology with task backlog and sprint planning.",
+      "Developed an intelligent bed sensor system for hospitals. As the Project Manager, we collaboratively gathered user requirements and I lead the development process using Scrum methodology with task backlogs and sprint planning. Built the front-end with Vue.js and Quasar Framework, and the back-end with NestJS. Implemented an AI model using Python and TensorFlow LSTM to predict 5 distinct patient postures (out of bed, sitting, center, left, right) and integrated a real-time notification system to alert nurses and relatives when a patient is in danger.",
     link: "https://gitlab.com/8bit-bed-sensor",
     skills: [
       "Vue.js",
@@ -66,18 +66,11 @@ export const experiences: Experience[] = [
   {
     title: "Cafe Management System (CS Boot Camp 2024)",
     role: "Full-stack Developer",
-    period: "Project Boot Camp",
+    period: "Group Project (Boot Camp)",
     details:
-      "Developed a full-stack website cafe management system covering Customer View and Purchase, Staff, and Owner workflows. Worked as a team to design database schema, implemented front-end using Vue.js and Vuetify, back-end using NestJS and SQLite. Applied SDLC with feature planning and analyzed backend data to visualize sales trends and improve business decisions.",
+      "Collaborated in a Full-stack development of cafe management system covering Customer View and Purchase, Staff, and Owner. As a team, we designed a database schema, implemented the front-end using Vue.js and Vuetify, and the back-end using NestJS and SQLite. Applied SDLC with feature planning and analyzed backend data to visualize sales trends and improve business decisions. Login Authentication and Stock Management modules. Designed and developed the system architecture to support multi-branch operations with granular role-based user, ensuring secure and efficient data authorization across different user levels and locations.",
     link: "https://gitlab.com/cs-bootcamp-dcoffee",
-    skills: [
-      "Vue.js",
-      "Vuetify",
-      "NestJS",
-      "SQLite",
-      "Figma",
-      "Data Analysis",
-    ],
+    skills: ["Vue.js", "Vuetify", "NestJS", "SQLite", "Figma", "Data Analysis"],
     images: [
       "/img/experience/Figma/image (3).png",
       "/img/experience/Figma/image (4).png",

@@ -54,11 +54,6 @@ export const skills: Logo[] = [
     LucideIcon: Database,
     invert: false,
   },
-  {
-    name: "Drizzle",
-    icon: "https://cdn.simpleicons.org/drizzle/C5F74F",
-    invert: false,
-  },
 ];
 
 export const tools: Logo[] = [

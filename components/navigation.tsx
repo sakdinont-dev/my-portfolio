@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./theme-button";
-import { LanguagesToggle } from "./languages-button";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -40,7 +39,7 @@ export default function Navigation() {
                   "px-4 py-2 text-sm font-medium rounded-md transition-colors",
                   pathname === item.href
                     ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent",
+                    : "text-muted-foreground hover:text-foreground ",
                 )}
               >
                 {item.label}
@@ -48,7 +47,6 @@ export default function Navigation() {
             ))}
           </nav>
           <ThemeToggle />
-          <LanguagesToggle />
         </div>
       </div>
     </div>

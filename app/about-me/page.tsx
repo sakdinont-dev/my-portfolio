@@ -9,23 +9,27 @@ export default function AboutMePage() {
           <h2 className="text-2xl sm:text-3xl font-semibold text-foreground uppercase">
             About Me
           </h2>
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-            <Image
-              src="/img/me/img1.JPEG"
-              alt="Sakdinont Boonma"
-              width={200}
-              height={200}
-              className="rounded-full object-cover"
-            />
-            <div className="space-y-4 flex-1">
-              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
-                My name is Sakdinont Boonma.
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 rounded-3xl border border-border bg-muted/10 p-6 sm:p-10 relative overflow-hidden">
+            <div className="relative shrink-0 group">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 to-purple-500/40 rounded-full opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
+              <Image
+                src="/img/me/img5.jpg"
+                alt="Sakdinont Boonma"
+                width={220}
+                height={220}
+                className="relative z-10 rounded-full object-cover ring-4 ring-background shadow-xl transition-transform duration-500 aspect-square"
+              />
+            </div>
+
+            <div className="space-y-5 flex-1 text-center sm:text-left flex flex-col justify-center relative z-10">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+                Hi, I'm <span className="text-primary">Sakdinont Boonma</span>.
               </h3>
-              <p className="max-w-5xl leading-8 text-muted-foreground">
-                I enjoy turning complex problems into simple, beautiful
-                experiences. My work is informed by accessibility best
-                practices, strong performance, and thoughtful interaction
-                design.
+              <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-3xl">
+                I am a developer passionate about building applications and
+                solving complex problems. I am eager to contribute to a
+                professional development team, deliver high-quality software
+                solutions, and further refine my technical expertise.
               </p>
             </div>
           </div>

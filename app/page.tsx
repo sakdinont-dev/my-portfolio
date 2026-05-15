@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/card";
 import { Carousel } from "@/components/ui/carousel";
 import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function RootPage() {
@@ -40,11 +39,11 @@ export default function RootPage() {
       title: "lucideIcon",
       type: "Icon Library",
       description:
-        "Lightweight icons with custom styling for polished interface details.",
+        "Lightweight and open-source icons for a polished interface design.",
     },
     {
       title: "Vercel",
-      type: "Deployment Platform",
+      type: "Cloud Platform",
       description:
         "Seamless deployment and instant previews for fast front-end delivery.",
     },
@@ -52,7 +51,7 @@ export default function RootPage() {
       title: "GitHub",
       type: "Version Control",
       description:
-        "Source control and collaboration tools powering code versioning and CI workflows.",
+        "Source control and collaboration platform powering code versioning and CI/CD workflows.",
     },
   ];
 
@@ -78,10 +77,13 @@ export default function RootPage() {
               <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl uppercase">
                 Welcome to my portfolio
               </h1>
-              <p className="mt-4 max-w-5xl text-lg leading-8 text-muted-foreground">
-                I build accessible, polished web applications with Next.js,
-                TypeScript, and thoughtful UI design. Explore the sections below
-                to learn about my work, experience, and how to contact me.
+              <p className="mt-4 max-w-5xl text-lg sm:text-xl leading-relaxed text-muted-foreground">
+                I am a passionate Software Developer dedicated to crafting
+                high-performance, user-centric web applications. This portfolio
+                serves as a showcase of my technical journey, featuring my
+                projects, professional experience, and the skills I have honed
+                along the way. Feel free to explore my work and reach out for
+                collaboration.
               </p>
             </div>
           </div>
@@ -91,9 +93,9 @@ export default function RootPage() {
       <section className="rounded-3xl border border-border bg-card/90 p-6 sm:p-8 shadow-xl shadow-black/5 backdrop-blur-xl dark:bg-zinc-950/90">
         <div className="space-y-6">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-              Tech Stack
-              <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+              Portfolio Tech Stack
+              <div className="cursor-pointer">
                 <Link
                   href="https://github.com/sakdinont-dev/my-portfolio.git"
                   target="_blank"
@@ -105,12 +107,10 @@ export default function RootPage() {
                 </Link>
               </div>
             </h2>
-            <p className="mt-2 max-w-5xl leading-8 text-muted-foreground">
-              I build modern portfolio and app experiences with a strong focus
-              on TypeScript, React, Next.js, Tailwind CSS, and polished UI
-              components. This site also showcases iconography from lucide,
-              deployment on Vercel, GitHub-based workflows, and interactive
-              carousel components.
+            <p className="mt-4 max-w-5xl text-base sm:text-lg leading-relaxed text-muted-foreground">
+              This website was built from the ground up using modern web
+              technologies to ensure optimal performance for user experience.
+              Below are the core tools and frameworks powering this site.
             </p>
             <div className="mt-6">
               <Carousel
@@ -154,43 +154,6 @@ export default function RootPage() {
               />
             </div>
           </div>
-
-          {/* <div className="space-y-6">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <h3 className="text-2xl font-semibold text-foreground">
-                  Featured Projects
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  Highlighting recent work and reusable UI components built for
-                  modern portfolio experiences.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid gap-4 lg:grid-cols-3">
-              {projects.map((project) => (
-                <Card key={project.title} className="border-border">
-                  <CardHeader>
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.tech}</CardDescription>
-                  </CardHeader>
-                  <CardContent>{project.description}</CardContent>
-                  <CardFooter>
-                    <p className="text-sm font-medium text-primary">
-                      View details
-                    </p>
-                    <a
-                      href={project.href}
-                      className="text-sm font-semibold text-primary transition hover:text-primary/80"
-                    >
-                      Open
-                    </a>
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
-          </div> */}
         </div>
       </section>
     </div>
