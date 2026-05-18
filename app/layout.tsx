@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notoSansThai } from "@/font/noto-sans-thai";
 import Navigation from "@/components/navigation";
 import { ThemeProvider } from "@/lib/theme/theme-provider";
+import Analytics from "@/components/google-analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
             <div className="mx-auto max-w-6xl">{children}</div>
           </main>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

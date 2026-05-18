@@ -23,7 +23,8 @@ export default function AboutMePage() {
 
             <div className="space-y-5 flex-1 text-center sm:text-left flex flex-col justify-center relative z-10">
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
-                Hi, I'm <span className="text-primary">Sakdinont Boonma</span>.
+                Hi, I&apos;m{" "}
+                <span className="text-primary">Sakdinont Boonma</span>.
               </h3>
               <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-3xl">
                 I am a developer passionate about building applications and
